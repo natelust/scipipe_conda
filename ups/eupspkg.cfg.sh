@@ -53,7 +53,7 @@ install()
     (
         cd $PREFIX
         name=$(get_name)
-        conda env create --prefix=${PREFIX} --file=${PREFIX}${name}
+        conda env create --prefix=${PREFIX} --file=${PREFIX}/${name}
         rm $name
     )
     cp -r ups $PREFIX/
